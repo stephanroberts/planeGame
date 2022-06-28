@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flappy Plane</title>
+    <title>Simple Threejs App</title>
 </head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+</style>
 <body>
-    <h1> Work in progress ...</h1>
-    <p> Later u will be able to play a game here!</p>
+    <h1 style="position:absolute; margin-left: 25px; font-family: sans-serif; color: #F7ECDE;">Hello Cube</h1>
+    <script type="module">
+        import { App } from './app.js';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const app = new App();
+            window.app = app;
+        })
+    </script>
 </body>
 </html>
